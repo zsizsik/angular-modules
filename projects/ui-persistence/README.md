@@ -9,7 +9,7 @@ and want it to restore when you reload the application.
 
 
 
-I your template you are using this property so you have something like:
+In your template you are using this property, so you have something like:
 
 ```
 ...
@@ -21,7 +21,7 @@ All you have to do is add following element in the template:
 ```
 <ui-persist [what]="aProp" [key]="'someUniqueKey'" (onLoad)="aProp = $event"></ui-persist>
 ```    
-
+The position of the element does no matter. I put it on the end of the tamplate usually.
 
 The value of someUniqueKey should could me made up of the schema:
 ```

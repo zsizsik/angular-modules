@@ -1,11 +1,14 @@
 import { NgModule } from '@angular/core';
-import { UiPersistenceComponent } from './ui-persistence.component';
-import { UiPersistenceDirective } from './directives/ui-persistence.directive';
+import { CommonModule } from '@angular/common';
+import { UIPersistenceDirective } from './directives/ui-persistence.directive';
+import { UIPersistenceService } from './services/ui-persistence.service';
 
 @NgModule({
   imports: [
+    CommonModule
   ],
-  declarations: [UiPersistenceComponent, UiPersistenceDirective],
-  exports: [UiPersistenceComponent]
+  declarations: [UIPersistenceDirective],
+  providers:[UIPersistenceService],
+  exports: [UIPersistenceDirective]
 })
-export class UiPersistenceModule { }
+export class UIPersistenceModule {}

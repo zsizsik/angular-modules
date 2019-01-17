@@ -4,6 +4,23 @@ Provides a declarative way to save and restore component properties of your Angu
 
 ## Usage
 
+Import the dependency in you app.module.ts.
+```
+import { UiPersistenceModule } from 'ui-persistence';
+```
+
+List it in the declaration array of the NgModule annotation.
+```
+@NgModule({
+  ...
+  imports: [
+	...
+    UiPersistenceModule
+  ],
+  ...
+})
+```
+
 Let us say you have a component 'AComp' having a property 'aProp' and you want to save its value when it changes
 and want it to restore when you reload the application.
 

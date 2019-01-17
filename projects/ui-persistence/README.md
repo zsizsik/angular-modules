@@ -1,6 +1,6 @@
 # UI Persistence
 
-Provides a declarative way to save and restore component properties.
+Provides a declarative way to save and restore component properties of your Angular application or module.
 
 ## Usage
 

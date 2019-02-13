@@ -10,7 +10,7 @@ export class UIPersistenceService {
   }
 
   load(key: string): any {
-    var serialized = localStorage.getItem(key);
-    return serialized == null ? null : JSON.parse(serialized);
+    const serialized = localStorage.getItem(key);
+    return serialized ? JSON.parse(serialized) : null;
   }
 }
